@@ -227,7 +227,7 @@
     <div class="lg-brand"><div class="mk">R</div><div><b>Rise</b><small>Portal do cliente</small></div></div>
     <div class="lg-h">Entrar no portal</div>
     <div class="lg-sub">Acompanhe os relatórios dos seus serviços com a Rise.</div>
-    <div class="lg-field"><label>E-mail</label><input id="lg-email" type="email" autocomplete="username" placeholder="voce@email.com" required></div>
+    <div class="lg-field"><label>Usuário</label><input id="lg-email" type="text" autocomplete="username" placeholder="seu usuário" required></div>
     <div class="lg-field"><label>Senha</label><input id="lg-pass" type="password" autocomplete="current-password" placeholder="Sua senha" required></div>
     <button class="lg-btn" id="lg-btn" type="submit">Entrar</button>
     <div class="lg-msg" id="lg-msg"></div>
@@ -310,8 +310,10 @@ window.addEventListener('DOMContentLoaded', async ()=>{
 });
 function showLogin(){ $('login').style.display='flex'; $('app').style.display='none'; }
 function loginMsg(m){ $('lg-msg').textContent = m||''; }
+const LOGIN_DOMAIN = '@portal.riseagencia.com'; // usuário sem "@" vira usuario@portal.riseagencia.com
+function toEmail(v){ v=(v||'').trim().toLowerCase(); if(!v) return ''; return v.includes('@') ? v : (v.replace(/[^a-z0-9._-]/g,'') + LOGIN_DOMAIN); }
 async function doLogin(ev){ ev.preventDefault();
-  const email=$('lg-email').value.trim(), pass=$('lg-pass').value;
+  const email=toEmail($('lg-email').value), pass=$('lg-pass').value;
   if(!email||!pass) return;
   loginMsg(''); $('lg-btn').disabled=true; $('lg-btn').textContent='Entrando…';
   try{
