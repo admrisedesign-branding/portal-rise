@@ -216,6 +216,115 @@
     .mini,.two,.frentes{grid-template-columns:1fr}
     .content{padding:18px 16px 60px}
   }
+
+  /* ===== Diagnóstico · banner ===== */
+  .dbanner{position:relative;overflow:hidden;border-radius:var(--r);padding:24px;margin-bottom:18px;
+    background:radial-gradient(120% 140% at 100% 0%,var(--brand-soft),transparent 55%),linear-gradient(135deg,var(--card),var(--line-2));
+    border:1px solid var(--brand);box-shadow:var(--shadow)}
+  .dpulse{position:absolute;right:-30px;top:-30px;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,var(--brand-soft),transparent 70%)}
+  .deye{color:var(--brand);font-weight:800;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase}
+  .dbanner h2{font-size:22px;margin:9px 0 6px;letter-spacing:-.02em}
+  .dbanner p{color:var(--muted);font-size:14px;margin:0 0 8px;max-width:560px;line-height:1.55}
+  .dbanner p b{color:var(--ink)}
+  .dmeta{color:var(--faint);font-size:12.5px;margin:0 0 18px!important}
+  /* ===== Diagnóstico · medidor (home) ===== */
+  .gcard{background:linear-gradient(135deg,var(--card),var(--line-2));border:1px solid var(--line);border-radius:var(--r);
+    padding:20px;box-shadow:var(--shadow);margin-bottom:18px;display:flex;gap:22px;align-items:center;cursor:pointer;transition:border-color .15s}
+  .gcard:hover{border-color:var(--brand)}
+  .gwrap{flex:none;width:200px;text-align:center}
+  .gscore{font-size:38px;font-weight:800;letter-spacing:-.03em;margin-top:-16px;line-height:1}
+  .gscore small{font-size:17px;color:var(--muted);font-weight:700}
+  .gzone{font-size:12.5px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;margin-top:4px}
+  .ginfo h3{font-size:18px;margin:7px 0 6px}
+  .ginfo p{font-size:13.5px;color:var(--muted);margin:0 0 12px;line-height:1.5}
+  .gtags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}
+  .gtg{font-size:11.5px;font-weight:700;border-radius:30px;padding:3px 10px}
+  .gtg.bad{color:var(--quente);background:color-mix(in srgb,var(--quente) 14%,transparent)}
+  .gtg.ok{color:var(--verde);background:color-mix(in srgb,var(--verde) 14%,transparent)}
+  .gcta{color:var(--brand);font-weight:700;font-size:13.5px}
+  .ghostbtn{background:transparent;color:var(--brand);border:1px solid var(--brand);border-radius:11px;padding:9px 15px;font-weight:700;font-size:13px}
+  /* ===== Quiz ===== */
+  .quiz{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px;box-shadow:var(--shadow);max-width:640px}
+  .qprog{height:6px;background:var(--line-2);border-radius:30px;overflow:hidden;margin-bottom:20px}
+  .qprog>i{display:block;height:100%;background:var(--brand);transition:width .3s}
+  .qnum{color:var(--brand);font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+  .qtext{font-size:19px;font-weight:700;margin:8px 0 18px;letter-spacing:-.01em}
+  .qopts{display:grid;gap:10px}
+  .qopt{display:flex;align-items:center;gap:12px;background:var(--bg);border:1px solid var(--line);border-radius:13px;
+    padding:14px 16px;cursor:pointer;font-size:14.5px;text-align:left;color:var(--ink);transition:.15s}
+  .qopt:hover{border-color:var(--brand)}
+  .qopt.sel{border-color:var(--brand);background:var(--brand-soft)}
+  .qrd{width:20px;height:20px;border-radius:50%;border:2px solid var(--faint);flex:none}
+  .qopt.sel .qrd{border-color:var(--brand);background:var(--brand);box-shadow:inset 0 0 0 3px var(--card)}
+  .qfoot{display:flex;justify-content:space-between;align-items:center;margin-top:20px}
+  .qback{background:none;border:none;color:var(--muted);font-size:13.5px;cursor:pointer;font-weight:600}
+  .qhint{font-size:12.5px;color:var(--faint)}
+  /* ===== Diagnóstico · detalhes ===== */
+  .back{background:none;border:none;color:var(--muted);font-size:13.5px;cursor:pointer;font-weight:600;margin-bottom:14px}
+  .dhead{display:flex;gap:20px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:var(--shadow)}
+  .dhtxt h2{font-size:20px;margin:0 0 5px;letter-spacing:-.02em}
+  .dhtxt p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.5}
+  .dbars{display:grid;gap:11px}
+  .brow{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 15px;box-shadow:var(--shadow)}
+  .brow .bt{display:flex;justify-content:space-between;align-items:center;font-size:14px;font-weight:700;margin-bottom:9px}
+  .brow .bt .st{font-size:11px;font-weight:800;border-radius:30px;padding:2px 9px}
+  .brow .st.bad{color:var(--quente);background:color-mix(in srgb,var(--quente) 14%,transparent)}
+  .brow .st.ok{color:var(--morno);background:color-mix(in srgb,var(--morno) 16%,transparent)}
+  .brow .st.good{color:var(--verde);background:color-mix(in srgb,var(--verde) 14%,transparent)}
+  .track{height:9px;background:var(--line-2);border-radius:30px;overflow:hidden}
+  .track>i{display:block;height:100%;border-radius:30px}
+  .upsell{background:linear-gradient(135deg,var(--card),var(--line-2));border:1px solid var(--brand);border-radius:14px;padding:16px 17px;margin-bottom:11px;box-shadow:var(--shadow)}
+  .upsell .uh{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .upsell .un{font-weight:700;font-size:14.5px}
+  .upsell .ux{font-size:10.5px;font-weight:800;color:var(--quente);background:color-mix(in srgb,var(--quente) 14%,transparent);border-radius:30px;padding:3px 9px;white-space:nowrap}
+  .upsell p{margin:8px 0 12px;font-size:13px;color:var(--muted);line-height:1.55}
+  .upsell p b{color:var(--ink)}
+  .ufix{background:var(--brand-soft);border:1px solid var(--brand);border-radius:11px;padding:10px 13px;font-size:12.8px;margin-bottom:12px;line-height:1.5}
+  .ufix b{color:var(--brand-deep)}
+  .udone{color:var(--verde);font-weight:700;font-size:13px}
+  .forte{display:flex;gap:11px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-bottom:9px;box-shadow:var(--shadow)}
+  .forte .fic{color:var(--verde);font-size:16px;flex:none;font-weight:800}
+  .forte .ftt{font-weight:700;font-size:14px}
+  .forte .ftd{font-size:12.5px;color:var(--muted);margin-top:2px}
+  /* ===== Home · card onboarding + grid ===== */
+  .homegrid{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;margin-bottom:18px}
+  .onbcard{background:linear-gradient(135deg,var(--card),var(--line-2));border:1px solid var(--brand);border-radius:var(--r);padding:19px;box-shadow:var(--shadow);cursor:pointer;transition:.15s}
+  .onbcard:hover{transform:translateY(-1px)}
+  .onbcard .pin{font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--brand)}
+  .onbcard h3{font-size:17px;margin:8px 0 6px}
+  .onbcard p{font-size:13px;color:var(--muted);margin:0 0 13px;line-height:1.5}
+  .onbmini{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+  .onbmini span{font-size:11px;font-weight:700;color:var(--verde);background:color-mix(in srgb,var(--verde) 12%,transparent);border-radius:30px;padding:3px 9px}
+  .onbcta{color:var(--brand);font-weight:700;font-size:13.5px}
+  /* ===== Report · painel "ver onboarding" ===== */
+  .seepanel{display:flex;align-items:center;gap:14px;justify-content:space-between;flex-wrap:wrap;background:var(--brand-softer);border:1px solid var(--line);border-radius:14px;padding:15px 18px;margin-top:6px;cursor:pointer}
+  .seepanel:hover{border-color:var(--brand)}
+  .seepanel b{display:block;font-size:14px}
+  .seepanel span{color:var(--muted);font-size:12.5px}
+  .seearrow{color:var(--brand);font-weight:800;font-size:13px;white-space:nowrap}
+  /* ===== Onboarding · holístico ===== */
+  .holhero{position:relative;overflow:hidden;border-radius:var(--r);padding:24px;margin-bottom:16px;
+    background:radial-gradient(120% 140% at 100% 0%,var(--brand-soft),transparent 55%),linear-gradient(135deg,var(--card),var(--line-2));
+    border:1px solid var(--line);box-shadow:var(--shadow)}
+  .holhero h2{font-size:23px;margin:9px 0 7px;letter-spacing:-.02em}
+  .holhero p{color:var(--muted);font-size:14px;margin:0 0 18px;max-width:640px;line-height:1.6}
+  .holhero p b{color:var(--ink)}
+  .holstrip{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+  .holstep{display:inline-flex;align-items:center;gap:7px;background:var(--bg);border:1px solid var(--line);border-radius:30px;padding:6px 12px;font-size:12.5px;font-weight:700;white-space:nowrap}
+  .holstep .he{font-size:14px}
+  .harr{color:var(--faint);font-weight:700}
+  .holloop{display:inline-flex;align-items:center;gap:7px;background:var(--brand-soft);border:1px solid var(--brand);color:var(--brand-deep);border-radius:30px;padding:6px 12px;font-size:12.5px;font-weight:800;white-space:nowrap}
+  .holcycle{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .cynode{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:14px;box-shadow:var(--shadow)}
+  .cyt{font-weight:700;font-size:13.5px;display:flex;align-items:center;gap:8px}
+  .cye{font-size:16px}
+  .cys{font-size:12px;color:var(--muted);margin-top:5px;line-height:1.45}
+  .onbdone{color:var(--verde);font-weight:800}
+  @media(max-width:860px){
+    .homegrid,.holcycle{grid-template-columns:1fr}
+    .gcard,.dhead{flex-direction:column;text-align:center}
+    .gwrap{width:190px}
+  }
 </style>
 </head>
 <body>
@@ -244,6 +353,7 @@
       <nav>
         <div class="nav-lbl">Menu</div>
         <button class="nav-item on" data-v="home"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>Início</button>
+        <button class="nav-item" data-v="onboarding"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Onboarding</button>
         <button class="nav-item" data-v="relatorios"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 3v18h18"/><rect x="7" y="10" width="3" height="7" rx="1"/><rect x="12" y="5" width="3" height="12" rx="1"/><rect x="17" y="13" width="3" height="4" rx="1"/></svg>Relatórios</button>
       </nav>
       <div class="side-foot"><div class="who"><b id="who-nome">—</b><span>Cliente Rise</span></div></div>
@@ -283,7 +393,8 @@
 const SB_URL  = 'https://wpoeigoledhzyvomudgf.supabase.co';
 const SB_ANON = 'sb_publishable_S4eWNjOtaiXTo5sr9Hek0A_42NzE4jf';
 const API = '/api/portal-relatorios';
-let sb = null, ST = { tenant:null, lista:[], mes:null, view:'home', tab:'visao', comp:'', tit:'', email:'' };
+const DIAG_API = '/api/portal-diagnostico';
+let sb = null, ST = { tenant:null, lista:[], mes:null, view:'home', tab:'visao', comp:'', tit:'', email:'', token:'', screen:null, diag:null, diagCur:0, diagAns:[] };
 const FONTE = {
   meta:{cor:'#1877F2',ic:'f',nome:'Meta Ads',sub:'Anúncios · Facebook + Instagram'},
   instagram:{cor:'#d81b7a',ic:'◉',nome:'Instagram',sub:'Perfil e conteúdo orgânico'},
@@ -325,6 +436,7 @@ async function doLogin(ev){ ev.preventDefault();
 }
 function enterApp(session){
   ST.email = (session.user && session.user.email) || '';
+  ST.token = session.access_token || '';
   $('acct-av').textContent = (ST.email[0]||'C').toUpperCase();
   $('login').style.display='none'; $('app').style.display='block';
   fetchData(session.access_token);
@@ -340,6 +452,11 @@ async function fetchData(token){
     ST.tenant = d.tenant || {nome:'Cliente'}; ST.lista = Array.isArray(d.relatorios)?d.relatorios:[];
     if(ST.lista.length) ST.mes = ST.lista[0].mes;
     $('who-nome').textContent = ST.tenant.nome || 'Cliente';
+    try{
+      const dr = await fetch(DIAG_API, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ access_token: token }) });
+      const dj = await dr.json();
+      ST.diag = (dr.ok && dj.diagnostico) ? { done:true, score:dj.diagnostico.score, dims:dj.diagnostico.dims||{}, ans:dj.diagnostico.respostas||[] } : { done:false };
+    }catch(e){ ST.diag = { done:false }; }
     paint();
   }catch(e){ $('content').innerHTML = `<div class="empty">Não consegui carregar agora. Tente de novo em instantes.</div>`; }
 }
@@ -362,7 +479,7 @@ async function savePass(){
 function bindShell(){
   document.querySelectorAll('.nav-item').forEach(b => b.onclick = () => {
     document.querySelectorAll('.nav-item').forEach(x=>x.classList.remove('on'));
-    b.classList.add('on'); ST.view=b.dataset.v; closeSide(); paint();
+    b.classList.add('on'); ST.view=b.dataset.v; ST.screen=null; closeSide(); paint();
   });
   $('burger').onclick = ()=>{ $('side').classList.add('open'); $('sidescrim').classList.add('on'); };
   $('sidescrim').onclick = closeSide;
@@ -379,25 +496,201 @@ function currentRep(){ return ST.lista.find(x=>x.mes===ST.mes) || ST.lista[0] ||
 function paint(){
   const rep = currentRep(), dd = rep ? (rep.dados||{}) : {};
   ST.comp = dd.comparado || 'Anterior'; ST.tit = dd.titulo || '';
-  $('ptitle').textContent = ST.view==='home' ? 'Início' : 'Relatórios';
-  $('psub').textContent = ST.view==='home' ? '' : (rep ? (esc(dd.titulo||ST.mes)+(dd.comparado?(' · comparado a '+esc(dd.comparado)):'')) : '');
+  const titles={home:'Início',onboarding:'Onboarding',relatorios:'Relatórios'};
+  $('ptitle').textContent = titles[ST.view]||'Início';
+  $('psub').textContent = ST.view==='relatorios' ? (rep ? (esc(dd.titulo||ST.mes)+(dd.comparado?(' · comparado a '+esc(dd.comparado)):'')) : '')
+    : (ST.view==='onboarding' ? 'Tudo o que a Rise já construiu para a My Robot' : '');
   $('mesbox').innerHTML = (ST.view==='relatorios' && ST.lista.length>1)
     ? `<select class="msel" onchange="setMes(this.value)">`+ST.lista.map(x=>`<option value="${x.mes}" ${x.mes===ST.mes?'selected':''}>${esc((x.dados&&x.dados.titulo)||x.mes)}</option>`).join('')+`</select>` : '';
   const c = $('content');
   if(!rep){ c.innerHTML = `<div class="empty"><div style="font-size:34px;margin-bottom:8px">📊</div><b style="color:var(--ink)">Seus relatórios aparecem aqui</b><br>Assim que a Rise publicar o relatório do mês, ele aparece pra você.</div>`; return; }
-  c.innerHTML = ST.view==='home' ? renderHome(dd) : renderRelatorios(dd);
+  if(ST.view==='onboarding'){ c.innerHTML = renderOnboarding(dd); }
+  else if(ST.view==='relatorios'){ c.innerHTML = renderRelatorios(dd); }
+  else { c.innerHTML = ST.screen==='quiz' ? renderQuiz() : (ST.screen==='details' ? renderDiagDetails(dd) : renderHome(dd)); }
 }
 
 /* ---------- HOME ---------- */
 function renderHome(dd){
   const nome = dd.saudacao_nome || (ST.tenant.nome||'').split(' ')[0] || '';
   const r = dd.resumo || {};
+  loadDiag();
   let h = `<div class="hello"><h2>Olá${nome?', '+esc(nome):''}! Seja bem-vindo. 👋</h2>
-    <p>Aqui você acompanha os relatórios dos serviços da Rise e a evolução deles, mês a mês. O relatório mais recente é de <b>${esc(dd.titulo||ST.mes)}</b>.</p></div>`;
-  if(dd.recado) h += `<div class="recado"><h3>${esc(dd.recado.titulo||'Recado da Rise')}</h3><p>${raw(dd.recado.texto)}</p></div>`;
-  if(r.chips && r.chips.length){ h += `<h2 class="st"><span class="dt"></span>Resumo do mês</h2><div class="home-cards">`+
+    <p>Aqui você acompanha os serviços da Rise e a evolução deles, mês a mês. O relatório mais recente é de <b>${esc(dd.titulo||ST.mes)}</b>.</p></div>`;
+
+  /* diagnóstico: banner (antes) ou medidor (depois do teste) */
+  h += (ST.diag && ST.diag.done) ? diagGaugeCard() : diagBanner();
+
+  /* resumo do mês */
+  if(r.chips && r.chips.length){ h += `<h2 class="st"><span class="dt"></span>Resumo de ${esc(dd.titulo||'julho')}</h2><div class="home-cards">`+
     r.chips.map(x=>`<div class="hcard"><b>${esc(x.v)}</b><span>${esc(x.l)}</span></div>`).join('')+`</div>`; }
+
+  /* card "A Rise, por inteiro" + recado, lado a lado */
+  const onb = `<div class="onbcard" onclick="goView('onboarding')">
+      <div class="pin">📋 Onboarding</div>
+      <h3>A Rise, por inteiro</h3>
+      <p>Olhamos a My Robot de ponta a ponta — da marca ao CRM. Veja tudo o que já construímos: 8 frentes num só sistema.</p>
+      <div class="onbmini"><span>✓ Diagnóstico</span><span>✓ Site</span><span>✓ CRM</span><span>✓ Treinamento</span><span>+4</span></div>
+      <span class="onbcta">Ver o que já construímos →</span>
+    </div>`;
+  const rec = dd.recado ? `<div class="recado" style="margin:0"><h3>${esc(dd.recado.titulo||'Recado da Rise')}</h3><p>${raw(dd.recado.texto)}</p></div>` : '';
+  h += `<div class="homegrid">${onb}${rec}</div>`;
+
   h += `<button class="cta" onclick="goView('relatorios')">Ver relatório completo →</button>`;
+  return h;
+}
+
+/* ---------- DIAGNÓSTICO DE MARKETING ---------- */
+const DIMS = {
+  marca:    {nome:'Marca & Identidade',   base:90},
+  site:     {nome:'Site & Conversão',     base:88},
+  trafego:  {nome:'Tráfego & Aquisição',  base:92},
+  instagram:{nome:'Instagram & Conteúdo', base:48},
+  crm:      {nome:'CRM & Atendimento',    base:44},
+  reputacao:{nome:'Reputação & Retenção', base:94}
+};
+const DQ = [
+  {dim:'instagram', t:'Com que frequência a My Robot publica conteúdo no Instagram?',
+   o:[['Quase todo dia, com constância',100],['Algumas vezes por semana',55],['De vez em quando, sem rotina',20]]},
+  {dim:'crm', t:'Quanto tempo o time leva, em média, para responder um lead novo?',
+   o:[['Em menos de 1 hora',100],['Algumas horas, no mesmo dia',55],['Um dia ou mais — às vezes esfria',20]]},
+  {dim:'site', t:'Você consegue ver de onde vieram suas matrículas?',
+   o:[['Sim, acompanho tudo pelo CRM/site',100],['Mais ou menos, só uma parte',55],['Não tenho essa visão',20]]},
+  {dim:'marca', t:'A identidade (logo, cores, tom) está consistente em todos os canais?',
+   o:[['Sim, tudo padronizado e no mesmo tom',100],['Em parte, alguns canais destoam',55],['Não, cada canal é de um jeito',20]]},
+  {dim:'trafego', t:'Você tem previsibilidade de quantas matrículas o digital traz por mês?',
+   o:[['Sim, tenho uma previsão confiável',100],['Uma noção aproximada',55],['Não consigo prever',20]]},
+  {dim:'reputacao', t:'A My Robot pede e acompanha avaliações das famílias (Google, NPS)?',
+   o:[['Sim, de forma organizada e contínua',100],['Às vezes, sem processo fixo',55],['Quase nunca',20]]}
+];
+const UPSELL = {
+  instagram:{p:'O alcance caiu <b>19%</b> e as interações <b>68%</b> em julho, mesmo com a base crescendo. O conteúdo está perdendo força.',
+    fix:'A Rise entra com um <b>plano de conteúdo turbinado</b> — mais Reels, calendário reforçado e testes de horário para recuperar o alcance.'},
+  crm:{p:'Há <b>159 leads parados em “Novo Lead”</b> esperando atendimento. O tráfego entrega — o funil trava no comercial.',
+    fix:'A Rise entra com <b>reforço comercial + automação de follow-up</b>: régua de contato, scripts e alertas pra nenhum lead esfriar.'},
+  site:{p:'Falta clareza da origem das matrículas, o que dificulta saber o que realmente converte.',
+    fix:'A Rise entra com <b>otimização de site e rastreamento de conversão</b> de ponta a ponta.'},
+  trafego:{p:'<b>85,6%</b> das sessões vêm de anúncio pago — dependência alta de um só canal.',
+    fix:'A Rise entra com <b>SEO e orgânico</b> para diversificar a origem e baixar o custo no médio prazo.'},
+  marca:{p:'A identidade ainda destoa entre canais, o que enfraquece o reconhecimento da marca.',
+    fix:'A Rise entra com <b>padronização de identidade</b> em todos os pontos de contato.'},
+  reputacao:{p:'A coleta de avaliações e NPS ainda é irregular.',
+    fix:'A Rise entra com um <b>sistema de NPS que vira 5★ no Google</b> de forma contínua.'}
+};
+const FORTE = {
+  marca:'Identidade nova e consistente em todos os canais.',
+  site:'Site com formulário inteligente que entrega o lead já pontuado ao CRM.',
+  trafego:'Tráfego entregando 8,3x de retorno, com custo por lead 74% menor.',
+  instagram:'Link na bio disparou +283% em cliques.',
+  crm:'Funil estruturado com lead scoring 0–100.',
+  reputacao:'Reputação 5,0★ no Google, com NPS ativo.'
+};
+function loadDiag(){ if(ST.diag===null) ST.diag={done:false}; }
+async function saveDiagServer(o){ if(!ST.token) return;
+  try{ await fetch(DIAG_API, { method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ access_token: ST.token, save:{ score:o.score, dims:o.dims, respostas:o.ans } }) }); }catch(e){} }
+function diagColor(v){ return v>=75?'var(--verde)':(v>=58?'var(--morno)':'var(--quente)'); }
+function diagZone(v){ return v>=80?'Excelente':(v>=62?'Bom, com ajustes':'Precisa de atenção'); }
+function diagLabel(v){ return v>=75?'Rise cobre':(v>=58?'Atenção':'Pra pensar'); }
+function diagStatus(v){ return v>=75?'good':(v>=58?'ok':'bad'); }
+function computeDiag(ans){ const dims={}; let sum=0,n=0;
+  Object.keys(DIMS).forEach(k=>{ const qi=DQ.findIndex(q=>q.dim===k); const a=ans?ans[qi]:null;
+    const apts=(a==null)?55:DQ[qi].o[a][1]; const v=Math.round(0.70*DIMS[k].base+0.30*apts); dims[k]=v; sum+=v; n++; });
+  return { score:Math.round(sum/n), dims }; }
+function gaugeSVG(v,w){ const h=Math.round(w*150/240), off=(283*(1-v/100)).toFixed(1), rot=(v/100*180).toFixed(1), col=diagColor(v);
+  return `<svg viewBox="0 0 240 150" width="${w}" height="${h}">
+    <path d="M30 130 A90 90 0 0 1 210 130" fill="none" stroke="var(--line)" stroke-width="16" stroke-linecap="round"/>
+    <path d="M30 130 A90 90 0 0 1 210 130" fill="none" stroke="${col}" stroke-width="16" stroke-linecap="round" stroke-dasharray="283" stroke-dashoffset="${off}"/>
+    <line x1="120" y1="130" x2="45" y2="130" stroke="var(--ink)" stroke-width="4" stroke-linecap="round" transform="rotate(${rot} 120 130)"/>
+    <circle cx="120" cy="130" r="8" fill="var(--ink)"/></svg>`; }
+
+function diagBanner(){
+  return `<div class="dbanner">
+    <div class="dpulse"></div>
+    <div class="deye">Raio-X da Presença Digital</div>
+    <h2>Faça o raio-x da presença digital da ${esc((ST.tenant&&ST.tenant.nome)||'sua escola')}</h2>
+    <p>Em 2 minutos, veja o que a <b>Rise já cobre</b> na sua presença digital — e os <b>pontos que ainda merecem sua atenção</b>. Cruzamos suas respostas com os dados do relatório.</p>
+    <p class="dmeta">6 perguntas · resultado na hora · sua nota fica salva aqui na Home</p>
+    <button class="cta" onclick="startDiag()">Começar raio-x →</button>
+  </div>`;
+}
+function diagGaugeCard(){
+  const v=ST.diag.score, dims=ST.diag.dims||{};
+  let bad=0,good=0; Object.keys(dims).forEach(k=>{ if(dims[k]<60)bad++; else if(dims[k]>=80)good++; });
+  return `<div class="gcard" onclick="openDiagDetails()">
+    <div class="gwrap">${gaugeSVG(v,190)}
+      <div class="gscore"><span>${v}</span><small>/100</small></div>
+      <div class="gzone" style="color:${diagColor(v)}">${diagZone(v)}</div>
+    </div>
+    <div class="ginfo">
+      <div class="deye">Raio-X da Presença Digital</div>
+      <h3>Presença digital da ${esc((ST.tenant&&ST.tenant.nome)||'escola')}</h3>
+      <p>Veja o que a Rise já cobre e os pontos que merecem sua atenção — com base no seu relatório.</p>
+      <div class="gtags"><span class="gtg ok">${good} coberto${good!=1?'s':''} pela Rise</span><span class="gtg bad">${bad} pra pensar</span></div>
+      <span class="gcta">Ver raio-x completo →</span>
+    </div>
+  </div>
+  <div style="margin-top:12px"><button class="ghostbtn" onclick="event.stopPropagation();startDiag()">↻ Refazer diagnóstico</button></div>`;
+}
+window.startDiag = ()=>{ ST.diagCur=0; ST.diagAns=(ST.diag&&ST.diag.ans)?ST.diag.ans.slice():new Array(DQ.length).fill(null); ST.screen='quiz'; paint(); window.scrollTo({top:0,behavior:'smooth'}); };
+window.openDiagDetails = ()=>{ ST.screen='details'; paint(); window.scrollTo({top:0}); };
+window.answerDiag = (i)=>{ ST.diagAns[ST.diagCur]=i;
+  if(ST.diagCur < DQ.length-1){ ST.diagCur++; paint(); }
+  else { const r=computeDiag(ST.diagAns); const obj={done:true, score:r.score, dims:r.dims, ans:ST.diagAns.slice()}; ST.diag=obj; ST.screen=null; paint(); window.scrollTo({top:0,behavior:'smooth'}); saveDiagServer(obj); } };
+window.prevDiag = ()=>{ if(ST.diagCur>0){ ST.diagCur--; paint(); } else { ST.screen=null; paint(); } };
+
+function renderQuiz(){
+  const q=DQ[ST.diagCur], pct=Math.round(ST.diagCur/DQ.length*100), sel=ST.diagAns[ST.diagCur];
+  return `<div class="quiz">
+    <div class="qprog"><i style="width:${pct}%"></i></div>
+    <div class="qnum">Pergunta ${ST.diagCur+1} de ${DQ.length}</div>
+    <div class="qtext">${esc(q.t)}</div>
+    <div class="qopts">`+q.o.map((opt,i)=>`<button class="qopt ${sel===i?'sel':''}" onclick="answerDiag(${i})"><span class="qrd"></span><span>${esc(opt[0])}</span></button>`).join('')+`</div>
+    <div class="qfoot"><button class="qback" onclick="prevDiag()">← Voltar</button><span class="qhint">Padrão de mercado · leva ~2 min</span></div>
+  </div>`;
+}
+function renderDiagDetails(dd){
+  const v=ST.diag.score, dims=ST.diag.dims||{};
+  const order=Object.keys(dims).map(k=>({k,s:dims[k]})).sort((a,b)=>a.s-b.s);
+  const bars=order.map(it=>{ const st=diagStatus(it.s);
+    return `<div class="brow"><div class="bt"><span>${esc(DIMS[it.k].nome)}</span><span class="st ${st}">${diagLabel(it.s)} · ${it.s}</span></div><div class="track"><i style="width:${it.s}%;background:${diagColor(it.s)}"></i></div></div>`; }).join('');
+  const ups=order.filter(it=>it.s<60).map(it=>{ const u=UPSELL[it.k];
+    return `<div class="upsell"><div class="uh"><span class="un">${esc(DIMS[it.k].nome)}</span><span class="ux">Pra pensar · ${it.s}/100</span></div><p>${raw(u.p)}</p><div class="ufix">${raw(u.fix)}</div><button class="cta" style="padding:10px 16px;font-size:13.5px" onclick="this.outerHTML='&lt;span class=&quot;udone&quot;&gt;✓ Recebemos! A Rise vai te chamar com uma proposta.&lt;/span&gt;'">Quero resolver com a Rise →</button></div>`; }).join('');
+  const fortes=order.filter(it=>it.s>=80).sort((a,b)=>b.s-a.s).map(it=>
+    `<div class="forte"><span class="fic">✓</span><div><div class="ftt">${esc(DIMS[it.k].nome)} · ${it.s}/100</div><div class="ftd">${esc(FORTE[it.k])}</div></div></div>`).join('');
+  return `<button class="back" onclick="ST.screen=null;paint();window.scrollTo({top:0})">← Voltar para a Home</button>
+    <div class="dhead">
+      <div class="gwrap" style="width:170px">${gaugeSVG(v,170)}<div class="gscore" style="font-size:30px"><span>${v}</span><small>/100</small></div><div class="gzone" style="color:${diagColor(v)}">${diagZone(v)}</div></div>
+      <div class="dhtxt"><h2>Raio-X da Presença Digital · ${esc((ST.tenant&&ST.tenant.nome)||'')}</h2><p>Com base nas suas respostas e no relatório de ${esc((dd&&dd.titulo)||'julho')}. Cada frente com sua nota — o que a Rise já cobre e o que ainda merece a sua atenção.</p></div>
+    </div>
+    <h2 class="st" style="margin-top:22px"><span class="dt"></span>Nota por frente</h2><div class="dbars">${bars}</div>
+    ${fortes?`<h2 class="st" style="margin-top:24px"><span class="dt"></span>O que a Rise já cobre</h2>${fortes}`:''}
+    ${ups?`<h2 class="st" style="margin-top:24px"><span class="dt"></span>Pontos pra você pensar · onde a Rise pode entrar</h2>${ups}`:''}`;
+}
+
+/* ---------- ONBOARDING · A RISE POR INTEIRO ---------- */
+function renderOnboarding(dd){
+  const x=dd.rise_inteiro||{};
+  const steps=[['🎨','Marca'],['🌐','Site'],['📍','SEO'],['📸','Instagram'],['💬','WhatsApp'],['🗂️','CRM']];
+  const cyc=[['🚀','Tráfego + Conteúdo','Anúncios Meta e Instagram atraem a pessoa certa.'],
+    ['🧲','Site qualifica','O formulário filtra: 3 em cada 4 leads chegam “quentes”.'],
+    ['💬','WhatsApp atende','Robô QUALIFICA + time respondem rápido e pontuam.'],
+    ['🗂️','CRM organiza','Cada lead cai no funil com dono e próxima ação.'],
+    ['🎓','Matrícula','O lead vira aluno — receita recorrente por família.'],
+    ['⭐','Indicação & reputação','Famílias satisfeitas geram 5★ — e o ciclo recomeça.']];
+  let h = `<div class="holhero">
+      <div class="deye">A Rise, por inteiro</div>
+      <h2>Olhamos a My Robot de ponta a ponta.</h2>
+      <p>${raw(x.intro||'Não somos fornecedor avulso de tráfego: reconstruímos a presença digital em camadas — da marca ao CRM — até virar um ciclo que se repete e cresce.')}</p>
+      <div class="holstrip">`+steps.map((s,i)=>`<span class="holstep"><span class="he">${s[0]}</span>${s[1]}</span>`+(i<steps.length-1?'<span class="harr">›</span>':'')).join('')+`<span class="harr">›</span><span class="holloop">↻ Tráfego que vira ciclo</span></div>
+    </div>`;
+  if(x.tiles) h += tiles(x.tiles);
+  h += `<h2 class="st" style="margin-top:8px"><span class="dt"></span>O ciclo de crescimento</h2>
+    <div class="holcycle">`+cyc.map(c=>`<div class="cynode"><div class="cyt"><span class="cye">${c[0]}</span>${esc(c[1])}</div><div class="cys">${esc(c[2])}</div></div>`).join('')+`</div>`;
+  if(x.frentes && x.frentes.length){
+    h += `<h2 class="st" style="margin-top:22px"><span class="dt"></span>As 8 frentes que já construímos</h2>
+      <div class="frentes">`+x.frentes.map(fx=>`<div class="scope"><div class="cat">${esc(fx.cat)} <span class="onbdone">✓</span></div><ul>`+(fx.itens||[]).map(i=>`<li>${raw(i)}</li>`).join('')+`</ul></div>`).join('')+`</div>`;
+  }
+  if(x.frase) h += callout(x.frase);
   return h;
 }
 
@@ -446,10 +739,8 @@ function lock(k,txt){ const m=FONTE[k]; return `<div class="lock"><div class="lb
 function tabVisao(dd){ const f=dd.fontes||{}, r=dd.resumo||{}; let h='';
   if(r.texto) h += `<div class="sec"><h2 class="st"><span class="dt"></span>Resumo de ${esc(dd.titulo||'')}</h2><p class="note" style="margin-top:0">${raw(r.texto)}</p></div>`;
   h += `<div class="chips">`+chip('meta',!!f.meta)+chip('instagram',!!f.instagram)+chip('ga4',!!f.ga4)+chip('crm',!!f.crm,f.crm)+`</div>`;
-  if(dd.rise_inteiro){ const x=dd.rise_inteiro;
-    const fr=`<div class="frentes">`+(x.frentes||[]).map(fx=>`<div class="scope"><div class="cat">${esc(fx.cat)}</div><ul>`+(fx.itens||[]).map(i=>`<li>${raw(i)}</li>`).join('')+`</ul></div>`).join('')+`</div>`;
-    const body=`${x.intro?`<p class="lead" style="margin:4px 0 12px">${raw(x.intro)}</p>`:''}${tiles(x.tiles)}${fr}${x.frase?callout(x.frase):''}`;
-    h += `<h2 class="st"><span class="dt"></span>A Rise, por inteiro</h2>`+det('Ver tudo o que a Rise construiu (diagnóstico, site, CRM, comercial, social…)', body);
+  if(dd.rise_inteiro){
+    h += `<div class="seepanel" onclick="goView('onboarding')"><div><b>Quer ver tudo o que a Rise construiu?</b><span>Diagnóstico, site, CRM, comercial, social e mais — as 8 frentes num só lugar.</span></div><span class="seearrow">A Rise, por inteiro →</span></div>`;
   }
   return h;
 }
