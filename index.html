@@ -9,25 +9,27 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <style>
   /* Identidade Rise: laranja + branco (claro) / preto + laranja (escuro) */
+  /* LIGHT — creme quente + laranja (estilo Salescape) */
   :root{
-    --brand:#FF6A1A; --brand-deep:#E2560C; --brand-2:#FF9350;
-    --brand-soft:rgba(255,106,26,.12); --brand-softer:rgba(255,106,26,.06);
-    --bg:#FAF9F7; --card:#FFFFFF; --line:#ECEAE5; --line-2:#F4F2EE;
-    --ink:#17130F; --muted:#6E665E; --faint:#A69E94;
-    --quente:#E0402A; --morno:#C47A08; --verde:#0E9F4F; --frio:#E2560C;
+    --brand:#EE6C2D; --brand-deep:#D2551B; --brand-2:#F79A6B;
+    --brand-soft:rgba(238,108,45,.10); --brand-softer:rgba(238,108,45,.05);
+    --bg:#FBF6F1; --card:#FFFFFF; --line:#EFE7DE; --line-2:#F6EFE8;
+    --ink:#2A2730; --muted:#7C7681; --faint:#ADA6AF;
+    --quente:#E0402A; --morno:#C47A08; --verde:#1FA971; --frio:#EE6C2D;
     --meta:#1877F2; --insta:#d81b7a; --ga4:#E8710A; --crm:#7c3aed;
-    --prevbar:#d9d4cc;
-    --r:16px; --shadow:0 1px 2px rgba(20,17,12,.04),0 6px 20px rgba(20,17,12,.06);
+    --prevbar:#EAD9CC;
+    --r:16px; --shadow:0 1px 2px rgba(40,30,20,.04),0 8px 24px rgba(180,120,80,.10);
     --sans:'Inter',system-ui,-apple-system,sans-serif;
   }
+  /* DARK — azul-marinho profundo + laranja (estilo LUX Panel) */
   :root[data-theme="dark"]{
-    --brand:#FF7A2E; --brand-deep:#FFA35E; --brand-2:#E2560C;
-    --brand-soft:rgba(255,122,46,.16); --brand-softer:rgba(255,122,46,.08);
-    --bg:#0B0A09; --card:#161311; --line:#2B2724; --line-2:#1D1A17;
-    --ink:#F5F0EA; --muted:#A79E95; --faint:#6F665D;
+    --brand:#FF6B2C; --brand-deep:#FF8A4D; --brand-2:#E85A1C;
+    --brand-soft:rgba(255,107,44,.16); --brand-softer:rgba(255,107,44,.08);
+    --bg:#0D1420; --card:#161F30; --line:#273349; --line-2:#1B2536;
+    --ink:#F3F6FC; --muted:#98A6BE; --faint:#5C6A84;
     --quente:#FF6B5E; --morno:#E3A63C; --verde:#37C463; --frio:#FF9350;
-    --prevbar:#3A3430;
-    --shadow:0 1px 2px rgba(0,0,0,.35),0 8px 24px rgba(0,0,0,.45);
+    --prevbar:#2A3650;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(3,8,18,.55);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
